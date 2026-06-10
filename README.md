@@ -1,2 +1,5 @@
 # pixel-journey-standards
-Central repository for engineering standards, templates, and best practices following Px design and eng-practices
+
+Temporary repository. This will be replaced by the upcoming PxPackages repo. Can be archived or deleted once PxPackages is live.
+
+No engineering standards content here.

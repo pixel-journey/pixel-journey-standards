@@ -31,21 +31,31 @@ The standards are organized into clear pillars. Start with the documents most re
 ### 4. Structural & Process Rules
 - `engineering/monorepo-pxpackages-rules.md` — Monorepo and package hygiene rules
 - `documentation/every-folder-readme-rule.md` — Mandatory high-quality README requirement
-- `ui-ux-design/design-system-alignment.md` — Zero individual styling + pixel-perfect expectations
 
-### 5. AI-Assisted Development
+### 5. UI/UX Design (Strong Pillar)
+- `ui-ux-design/design-system-alignment.md` — Zero individual styling + mandatory Design System usage
+- `ui-ux-design/visual-language-aesthetic-guidelines.md` — Retro pixel + premium glassmorphic philosophy and quality bar
+- `ui-ux-design/component-usage-standards.md` — Detailed component usage and composition rules
+- `ui-ux-design/motion-animation-haptics-standards.md` — Animation, timing, micro-interactions, and haptics
+- `ui-ux-design/form-input-validation-patterns.md` — Forms, inputs, validation, and submission flows
+- `ui-ux-design/empty-loading-error-state-standards.md` — Empty, loading, and error state treatments
+- `ui-ux-design/accessibility-inclusive-design-baseline.md` — Accessibility and inclusive design requirements
+- `ui-ux-design/data-visualization-grid-standards.md` — Leaderboards, grids, analytics, and data displays
+- `ui-ux-design/responsive-context-standards.md` — Adaptation across desktop, mobile, PWA, and Chrome Extensions
+
+### 6. AI-Assisted Development
 - `ai-agent-workflow-guide.md` — How to effectively use the codex with AI agents
 - `templates/ai-agent-self-audit-checklist.md` — Self-audit checklist for AI-generated work
 
-### 6. Education & Onboarding
+### 7. Education & Onboarding
 - `education-onboarding/README.md` — Education pillar overview
 - `education-onboarding/wax-for-px-devs.md` — Focused WAX concepts for Px developers
 
-### 7. Ecosystem & Integration
+### 8. Ecosystem & Integration
 - `ecosystem-integration.md` — How Standards connect to Design System, Templates, and Blueprint Catalog
 - `glossary.md` — Key terms used across the codex
 
-### 8. Templates & Practical Tools
+### 9. Templates & Practical Tools
 - `templates/new-readme-template.md` — Ready-to-use README template
 - `templates/new-package-scaffold-checklist.md` — Checklist for starting new packages
 - `.github/PULL_REQUEST_TEMPLATE.md` — PR template that references the standards
@@ -62,8 +72,8 @@ The standards are organized into clear pillars. Start with the documents most re
 
 **Working on PxPackages / Monorepo?** Prioritize:
 - `monorepo-pxpackages-rules.md`
-- `design-system-alignment.md`
-- `every-folder-readme-rule.md`
+- `ui-ux-design/design-system-alignment.md`
+- `documentation/every-folder-readme-rule.md`
 - `repo-readiness-scorecard.md`
 
 **Using AI Agents Heavily?** Prioritize:
@@ -74,6 +84,12 @@ The standards are organized into clear pillars. Start with the documents most re
 **Building Verifiable Game Mechanics?** Start with:
 - `verifiable-onchain-entropy-patterns.md`
 - `wax-for-px-devs.md`
+
+**Focusing on UI/UX Quality?** Prioritize:
+- `ui-ux-design/visual-language-aesthetic-guidelines.md`
+- `ui-ux-design/component-usage-standards.md`
+- `ui-ux-design/motion-animation-haptics-standards.md`
+- `ui-ux-design/responsive-context-standards.md`
 
 **Before any PR or Release**:
 - Run `repo-readiness-scorecard.md`

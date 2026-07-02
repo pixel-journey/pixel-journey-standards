@@ -45,6 +45,7 @@
 - [ ] Is all data coming from Hyperion / public indexers + local-first state where appropriate?
 - [ ] Am I composing Design System components instead of building custom styled ones?
 - [ ] Am I following good observability and error tracking practices (see `observability-standards.md`)?
+- [ ] Am I following appropriate security review practices for sensitive changes (see `security-review-and-hardening-standards.md`)?
 
 ---
 

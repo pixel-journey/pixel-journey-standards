@@ -32,7 +32,7 @@ The standards are organized into clear pillars. Start with the documents most re
 - `engineering/monorepo-pxpackages-rules.md` — Monorepo and package hygiene rules
 - `documentation/every-folder-readme-rule.md` — Mandatory high-quality README requirement
 
-### 5. UI/UX Design (Strong Pillar)
+### 5. UI/UX Design (Very Strong Pillar)
 - `ui-ux-design/design-system-alignment.md` — Zero individual styling + mandatory Design System usage
 - `ui-ux-design/visual-language-aesthetic-guidelines.md` — Retro pixel + premium glassmorphic philosophy and quality bar
 - `ui-ux-design/component-usage-standards.md` — Detailed component usage and composition rules
@@ -43,19 +43,25 @@ The standards are organized into clear pillars. Start with the documents most re
 - `ui-ux-design/data-visualization-grid-standards.md` — Leaderboards, grids, analytics, and data displays
 - `ui-ux-design/responsive-context-standards.md` — Adaptation across desktop, mobile, PWA, and Chrome Extensions
 
-### 6. AI-Assisted Development
+### 6. Marketing, Press & Graphics (New Pillar)
+- `marketing-press-graphics/visual-asset-and-graphics-standards.md` — Graphics, illustrations, memes, and visual asset quality
+- `marketing-press-graphics/brand-voice-and-messaging-standards.md` — Tone, language, storytelling, and communication principles
+- `marketing-press-graphics/press-kit-and-media-standards.md` — Press kits, media assets, and external communications
+- `marketing-press-graphics/ai-and-generated-content-guidelines.md` — Responsible use of AI for graphics, copy, and content
+
+### 7. AI-Assisted Development
 - `ai-agent-workflow-guide.md` — How to effectively use the codex with AI agents
 - `templates/ai-agent-self-audit-checklist.md` — Self-audit checklist for AI-generated work
 
-### 7. Education & Onboarding
+### 8. Education & Onboarding
 - `education-onboarding/README.md` — Education pillar overview
 - `education-onboarding/wax-for-px-devs.md` — Focused WAX concepts for Px developers
 
-### 8. Ecosystem & Integration
+### 9. Ecosystem & Integration
 - `ecosystem-integration.md` — How Standards connect to Design System, Templates, and Blueprint Catalog
 - `glossary.md` — Key terms used across the codex
 
-### 9. Templates & Practical Tools
+### 10. Templates & Practical Tools
 - `templates/new-readme-template.md` — Ready-to-use README template
 - `templates/new-package-scaffold-checklist.md` — Checklist for starting new packages
 - `.github/PULL_REQUEST_TEMPLATE.md` — PR template that references the standards
@@ -81,15 +87,15 @@ The standards are organized into clear pillars. Start with the documents most re
 - `templates/ai-agent-self-audit-checklist.md`
 - `px-work-checklist.md`
 
-**Building Verifiable Game Mechanics?** Start with:
-- `verifiable-onchain-entropy-patterns.md`
-- `wax-for-px-devs.md`
-
 **Focusing on UI/UX Quality?** Prioritize:
 - `ui-ux-design/visual-language-aesthetic-guidelines.md`
 - `ui-ux-design/component-usage-standards.md`
 - `ui-ux-design/motion-animation-haptics-standards.md`
-- `ui-ux-design/responsive-context-standards.md`
+
+**Working on Marketing, Press, or Graphics?** Prioritize:
+- `marketing-press-graphics/visual-asset-and-graphics-standards.md`
+- `marketing-press-graphics/brand-voice-and-messaging-standards.md`
+- `marketing-press-graphics/press-kit-and-media-standards.md`
 
 **Before any PR or Release**:
 - Run `repo-readiness-scorecard.md`

@@ -4,6 +4,8 @@
 
 This folder contains the core standards, rules, patterns, and guidance that define excellence across the Pixel Journey ecosystem.
 
+The codex is designed to be practical and actionable for both human developers and AI agents working on Px projects.
+
 ---
 
 ## How to Navigate This Section
@@ -49,12 +51,14 @@ The standards are organized into clear pillars. Start with the documents most re
 - `marketing-press-graphics/press-kit-and-media-standards.md` — Press kits, media assets, and external communications
 - `marketing-press-graphics/ai-and-generated-content-guidelines.md` — Responsible use of AI for graphics, copy, and content
 
-### 7. Scaffolds & Boilerplates (New Section)
+### 7. Scaffolds & Boilerplates (Alignment with Templates Repo)
 - `scaffolds-and-boilerplates/standards-for-templates-and-scaffolds.md` — Quality bar and expectations for the templates repository
 - `scaffolds-and-boilerplates/template-contribution-standards.md` — What makes a high-quality template contribution
+- `scaffolds-and-boilerplates/recommended-template-structure.md` — Suggested structure and organization for templates
+- `scaffolds-and-boilerplates/common-template-anti-patterns.md` — Common mistakes to avoid when building templates
 
 ### 8. AI-Assisted Development
-- `ai-agent-workflow-guide.md` — How to effectively use the codex with AI agents
+- `ai-agent-workflow-guide.md` — How to effectively use the codex with AI agents (includes guidance on using prompts from templates repo)
 - `templates/ai-agent-self-audit-checklist.md` — Self-audit checklist for AI-generated work
 
 ### 9. Education & Onboarding
@@ -104,6 +108,7 @@ The standards are organized into clear pillars. Start with the documents most re
 **Working with Templates / Scaffolds?** Prioritize:
 - `scaffolds-and-boilerplates/standards-for-templates-and-scaffolds.md`
 - `scaffolds-and-boilerplates/template-contribution-standards.md`
+- `scaffolds-and-boilerplates/recommended-template-structure.md`
 
 **Before any PR or Release**:
 - Run `repo-readiness-scorecard.md`

@@ -38,7 +38,7 @@ If the answer is clearly yes across the board, we are shipping Px Standard work.
 2. **Use the AI Agent Workflow Guide** — Follow `ai-agent-workflow-guide.md`.
 3. **Run the AI Self-Audit Checklist** — Before finalizing output.
 4. **Map decisions back to standards** — Explicitly reference which standards influenced choices.
-5. **When working on templates or blueprints** — Reference the `scaffolds-and-boilerplates/` and `educational-blueprints/` standards.
+5. **When working on templates or educational blueprints** — Reference the `scaffolds-and-boilerplates/` and `educational-blueprints/` standards.
 
 ---
 

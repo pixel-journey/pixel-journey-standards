@@ -14,7 +14,7 @@ The Pixel Journey GitHub Organization has several interconnected repositories th
 - `pixel-journey-templates`
 - `wax-ecosystem-blueprint-catalog`
 
-Understanding these connections helps us maintain consistency and maximize the value of all four repositories.
+Understanding these connections helps us maintain consistency and maximize the value of all repositories.
 
 ---
 
@@ -24,7 +24,7 @@ Understanding these connections helps us maintain consistency and maximize the v
 |-----------------------------------|---------------------------------------------------|----------------------------------------------------------|
 | **pixel-journey-standards**       | Defines excellence, rules, patterns, and quality  | The "constitution" and operating system                |
 | **pixel-journey-design-system**   | Visual language, components, tokens, retro aesthetic | The source of truth for all UI/UX implementation        |
-| **pixel-journey-templates**       | Scaffolds and boilerplates for new work           | The starting point that should already follow standards  |
+| **pixel-journey-templates**       | Scaffolds and boilerplates for new work           | The practical implementation layer of the standards      |
 | **wax-ecosystem-blueprint-catalog** | Curated WAX/Antelope patterns and best practices | The broader ecosystem knowledge base that standards reference and extend |
 
 ---
@@ -47,15 +47,17 @@ Understanding these connections helps us maintain consistency and maximize the v
 ### 2. pixel-journey-templates
 
 **Standards influence**:
-- New package and project scaffolds should include high-quality READMEs from day one (using the standards template).
-- Scaffolds should encourage (or enforce) use of the Repo Readiness Scorecard and relevant patterns.
-- Templates should align with monorepo rules and Existing Public Primitives First philosophy.
+- All templates and scaffolds must follow the **Standards for Templates and Scaffolds** (see `scaffolds-and-boilerplates/standards-for-templates-and-scaffolds.md`).
+- Template contributions should follow the **Template Contribution Standards**.
+- Templates should demonstrate best practices from the codex (UI/UX, state management, error handling, Existing Public Primitives First, etc.).
+- Templates should be educational and make it easy to build standards-compliant applications.
 
 **Templates provide**:
-- Fast starting points that already follow many standards.
-- Reduced friction for new contributors and AI agents.
+- Concrete, production-ready boilerplates that implement the standards.
+- Fast starting points that reduce friction for new projects.
+- Real-world feedback that can improve the standards over time.
 
-**Recommended flow**: Start new work from Templates → apply Standards immediately.
+**Recommended flow**: Start new work from Templates → apply Standards immediately. New template ideas should be guided by the scaffolds standards.
 
 ### 3. wax-ecosystem-blueprint-catalog
 
@@ -65,7 +67,7 @@ Understanding these connections helps us maintain consistency and maximize the v
 - On-chain primitives that Px work builds upon.
 
 **Standards extend**:
-- The catalog with Px-specific patterns (verifiable entropy, PxWallet vault patterns, monorepo wiring, etc.).
+- The catalog with Px-specific patterns (verifiable entropy, PxWallet vault patterns, monorepo wiring, UI/UX standards, etc.).
 - Educational framing tailored to Px development style.
 
 **Recommended flow**: Use the Blueprint Catalog as the broader knowledge base. Standards provide the Px-specific lens and rules on top of it.
@@ -77,7 +79,7 @@ Understanding these connections helps us maintain consistency and maximize the v
 ### Starting a New PxPackage or Feature
 
 1. Start from `pixel-journey-templates` (best scaffold).
-2. Immediately apply relevant sections from `pixel-journey-standards` (monorepo rules, documentation rule, UI/UX alignment).
+2. Immediately apply relevant sections from `pixel-journey-standards` (especially UI/UX standards and monorepo rules).
 3. Use components and tokens from `pixel-journey-design-system`.
 4. Reference patterns from `wax-ecosystem-blueprint-catalog` where relevant.
 5. Self-audit with the Repo Readiness Scorecard before first significant PR.
@@ -89,13 +91,19 @@ Understanding these connections helps us maintain consistency and maximize the v
 - Use the PR template that references the scorecard.
 - When in doubt, prefer composition of existing primitives (from Design System + Blueprint Catalog) over custom solutions.
 
+### Contributing to Templates
+
+- Follow the **Standards for Templates and Scaffolds** and **Template Contribution Standards**.
+- Ensure the template demonstrates high-quality, standards-aligned patterns.
+- Include excellent documentation and educational value.
+
 ---
 
 ## Governance & Evolution
 
-Changes to the Standards Codex that affect the other three repos should be coordinated (especially UI/UX rules and monorepo patterns).
+Changes to the Standards Codex that affect the templates repo should be coordinated. New patterns discovered while building templates should be proposed back into the standards repo.
 
-Major updates to Design System tokens/components or new templates should be reviewed against the current standards to maintain alignment.
+Major updates to the Design System or new high-quality templates should be reviewed for alignment with current standards.
 
 ---
 

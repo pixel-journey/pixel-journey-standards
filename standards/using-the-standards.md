@@ -1,4 +1,4 @@
-# Using the Pixel Journey Standards Codex
+# Using the Standards
 
 **Practical Guide for Humans and AI Agents**
 
@@ -6,102 +6,73 @@
 
 ---
 
-## Purpose of This Guide
+## Overview
 
-This document turns the standards from a reference into a **daily operating system** for Px development. It answers:
-
-- How do I start a new piece of work while following the standards?
-- How do I use the scorecard effectively?
-- What should AI agents do differently when working inside the Px ecosystem?
-- How do the different documents connect in practice?
+This document explains how to effectively use the Pixel Journey Standards Codex in daily work. It is designed for both human developers and AI agents.
 
 ---
 
-## For Human Developers & Contributors
+## Core Mindset
 
-### When Starting New Work (Package, Feature, or Repo)
+When working with Px codebases, always ask:
 
-1. **Read the Core Principles** (root `README.md`) — understand the current strategic stance (“Existing Public Primitives First”).
-2. **Review the Monorepo & PxPackages Rules** if you're working inside `@pxjourney/*`.
-3. **Review the UI/UX Alignment** document — commit to zero individual styling from the start.
-4. **Plan to follow the Every Folder README Rule** — every new folder gets a high-quality README.
-5. **Use the Repo Readiness Scorecard** as a self-audit checklist before you consider the work “ready for PR”.
+> "Is this work excellent, educational, aligned with our current strategy, and built to last?"
 
-### During Development
-
-- Keep the relevant standards documents open or bookmarked.
-- When you need a verifiable mechanic, go to `verifiable-onchain-entropy-patterns.md` first.
-- When in doubt about styling or components, go to the Design System (not custom code).
-- Document decisions and gotchas as you go (this makes the final README much easier).
-
-### Before Opening a PR or Cutting a Release
-
-1. Run the full **Repo Readiness Scorecard** self-audit.
-2. Score honestly. Note any categories below 2 and create follow-up tasks.
-3. Ensure every new or significantly changed folder has an excellent README.
-4. Confirm alignment with Existing Public Primitives First (no unnecessary custom contracts).
-5. If the score is ≥ 85 with no critical gaps → open the PR.
-
-### When Contributing to the Codex Itself
-
-Use the `.github/ISSUE_TEMPLATE/standards-proposal.md` template. Focus on improvements that raise clarity, actionability, or educational value.
+If the answer is clearly yes across the board, we are shipping Px Standard work.
 
 ---
 
-## For AI Agents & Automated Workflows
+## Recommended Daily Workflow
 
-### Core Instructions
+### For Humans
 
-- Treat the entire `pixel-journey-standards` repository as **primary context** for all Px-related tasks.
-- Before generating any plan or code, explicitly reference at least 2–3 relevant standards documents.
-- Every output must be structured so it would score well on the Repo Readiness Scorecard.
-- Always produce or update READMEs according to the Every Folder README Rule.
-- Map technical decisions back to the Core Principles (especially Existing Public Primitives First).
+1. **Start with the Quick Reference** — Keep `px-standards-at-a-glance.md` and `px-work-checklist.md` open.
+2. **Check relevant standards early** — Before major implementation decisions, review the most applicable documents (especially UI/UX standards, monorepo rules, and patterns).
+3. **Use the Scorecard as the quality gate** — Before opening a PR, honestly run the Repo Readiness Scorecard.
+4. **Document as you go** — Follow the Every Folder README Rule. Good documentation is part of the work, not after.
+5. **Reference standards in PRs** — Use the PR template and mention which standards influenced your decisions.
 
-### Recommended Workflow for AI Agents
+### For AI Agents
 
-1. Read the root `README.md` and `using-the-standards.md` first.
-2. Identify which pillars are most relevant to the task (web3-onchain, monorepo, UI/UX, etc.).
-3. Read those specific documents.
-4. Generate the plan/code with explicit references to the standards.
-5. Perform a mental self-audit against the scorecard before outputting the final result.
-6. Include or update README documentation as part of the deliverable.
-
-### Anti-Patterns for AI Agents
-
-- Generating code that introduces custom contracts without strong justification.
-- Producing UI with ad-hoc styling.
-- Skipping or writing low-quality READMEs.
-- Ignoring the “educational spirit” requirement (explain the “why”).
+1. **Always start with context** — Provide Core Principles + relevant standards documents in your prompt.
+2. **Use the AI Agent Workflow Guide** — Follow `ai-agent-workflow-guide.md` for best results.
+3. **Run the AI Self-Audit Checklist** — Before finalizing output, use `templates/ai-agent-self-audit-checklist.md`.
+4. **Map decisions back to standards** — Explicitly reference which standards influenced architectural or implementation choices.
+5. **When working on templates** — Also reference the `scaffolds-and-boilerplates/` standards.
 
 ---
 
-## How the Documents Connect in Practice
+## Most Important Documents by Category
 
-| When you need...                          | Go here first                                      |	hen also check...                  |
-|-------------------------------------------|----------------------------------------------------|------------------------------------|
-| Strategic direction for current wave      | Root `README.md`                                   | `existing-primitives-first.md`     |
-| Verifiable game mechanics / randomness    | `verifiable-onchain-entropy-patterns.md`           | `wax-for-px-devs.md`               |
-| Monorepo structure, package wiring        | `monorepo-pxpackages-rules.md`                     | Root README + scorecard            |
-| Styling / component decisions             | `design-system-alignment.md`                       | Monorepo rules                     |
-| Quality bar before PR/release             | `repo-readiness-scorecard.md`                      | All relevant rules                 |
-| Writing excellent documentation           | `every-folder-readme-rule.md`                      | Scorecard Documentation category   |
-| Understanding WAX concepts for Px work    | `wax-for-px-devs.md`                               | Web3-onchain documents             |
-| Onboarding new contributors / AI agents   | `using-the-standards.md` + education pillar        | Root README                        |
-
----
-
-## Quick Reference Checklist (Daily Use)
-
-- [ ] Am I building UI/UX on top of existing public primitives?
-- [ ] Is all styling coming from the Design System?
-- [ ] Will every folder have a high-quality README?
-- [ ] Have I explained the “why” (not just the “how”)?
-- [ ] Would this score ≥ 85 on the Repo Readiness Scorecard?
-- [ ] Is the work educational for future contributors?
+| Category                        | Key Documents                                              |
+|---------------------------------|------------------------------------------------------------|
+| Strategy                        | Root README + `existing-primitives-first.md`               |
+| UI/UX                           | All documents in `ui-ux-design/`                           |
+| Patterns                        | Various `recommended-*.md` files in `engineering/`         |
+| Quality                         | `repo-readiness-scorecard.md` + `px-work-checklist.md`     |
+| Documentation                   | `every-folder-readme-rule.md` + templates                  |
+| Templates & Scaffolds           | `scaffolds-and-boilerplates/` section                      |
+| AI Workflow                     | `ai-agent-workflow-guide.md`                               |
 
 ---
 
-*Use this guide to make the standards part of your daily workflow rather than something you only read once.*
+## Common Anti-Patterns When Using Standards
 
-**Px Standards — Using the Codex**
+- Treating standards as optional or "nice to have"
+- Only checking standards at the end of a task
+- Not running the scorecard before PRs
+- Writing poor documentation because "we'll fix it later"
+- Ignoring UI/UX standards in favor of quick custom solutions
+- Not referencing standards in PR descriptions
+
+---
+
+## Continuous Improvement
+
+The standards codex improves through real usage and feedback. If you find gaps, unclear guidance, or new patterns while working, propose improvements via the standards-proposal issue template.
+
+---
+
+*Use the standards as a tool to raise quality, not as bureaucracy.*
+
+**Px Standards — Using the Standards**

@@ -35,9 +35,10 @@ For different types of tasks, prioritize different documents:
 | New feature / package       | Monorepo rules + relevant patterns + Scorecard              | Documentation rule + UI/UX alignment    |
 | Refactor / audit            | Scorecard + relevant patterns                               | Engineering overview                    |
 | Verifiable mechanics        | `verifiable-onchain-entropy-patterns.md`                    | `existing-primitives-first.md`          |
-| UI work                     | `design-system-alignment.md` + monorepo rules               | Error handling patterns                 |
+| UI work                     | `ui-ux-design/*` standards                                  | Error handling patterns                 |
 | Documentation / READMEs     | `every-folder-readme-rule.md` + new-readme-template         | Ecosystem integration                   |
 | Security-sensitive work     | `recommended-secure-vault-patterns.md`                      | Error handling + state management       |
+| Template / Scaffold work    | `scaffolds-and-boilerplates/*` standards                    | Relevant UI/UX and pattern documents    |
 
 ### Phase 3: Self-Audit Before Accepting Output
 
@@ -66,6 +67,18 @@ Require the AI to:
 - **Iterate with feedback** using the scorecard as the rubric.
 - **Track context** — keep relevant standards documents in the conversation or system prompt when possible.
 
+## Using Specialized AI Prompts from the Templates Repo
+
+The `pixel-journey-templates` repository contains a rich collection of specialized AI agent prompts in its `ai-prompts/` folder. These prompts are designed for specific roles and tasks (e.g. `px-core-architect.md`, `wallet-security-engineer.md`, `educational-documenter.md`, `marketing-content-creator.md`, etc.).
+
+**Recommended approach**:
+- Use the general workflow and standards context from this guide.
+- For specialized tasks, pull in the relevant prompt from the templates repo's `ai-prompts/` folder as additional context or system prompt.
+- Combine the broad standards guidance with role-specific prompting for better results.
+- After using specialized prompts, still run outputs through the AI Self-Audit Checklist and relevant standards documents.
+
+This combination gives you both the broad quality framework (from standards) and task-specific expertise (from templates prompts).
+
 ## Common AI Pitfalls to Avoid in Px Work
 
 - Generating custom contracts without strong justification.
@@ -81,7 +94,7 @@ Require the AI to:
 
 You can add something like this to your AI agent system prompts or long-running conversations:
 
-> "You are working on Pixel Journey projects. Always follow the Px Standards Codex. Prioritize Existing Public Primitives First. Target high scores on the Repo Readiness Scorecard. Produce educational, well-documented output. Use the recommended patterns for state management, error handling, verifiable mechanics, and security. Never introduce individual styling."
+> "You are working on Pixel Journey projects. Always follow the Px Standards Codex. Prioritize Existing Public Primitives First. Target high scores on the Repo Readiness Scorecard. Produce educational, well-documented output. Use the recommended patterns for state management, error handling, verifiable mechanics, and security. Never introduce individual styling. When working on templates or scaffolds, follow the scaffolds-and-boilerplates standards."
 
 ---
 

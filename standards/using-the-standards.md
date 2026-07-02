@@ -27,18 +27,18 @@ If the answer is clearly yes across the board, we are shipping Px Standard work.
 ### For Humans
 
 1. **Start with the Quick Reference** — Keep `px-standards-at-a-glance.md` and `px-work-checklist.md` open.
-2. **Check relevant standards early** — Before major implementation decisions, review the most applicable documents (especially UI/UX standards, monorepo rules, and patterns).
+2. **Check relevant standards early** — Before major implementation decisions, review the most applicable documents.
 3. **Use the Scorecard as the quality gate** — Before opening a PR, honestly run the Repo Readiness Scorecard.
-4. **Document as you go** — Follow the Every Folder README Rule. Good documentation is part of the work, not after.
+4. **Document as you go** — Follow the Every Folder README Rule and Documentation Standards.
 5. **Reference standards in PRs** — Use the PR template and mention which standards influenced your decisions.
 
 ### For AI Agents
 
 1. **Always start with context** — Provide Core Principles + relevant standards documents in your prompt.
-2. **Use the AI Agent Workflow Guide** — Follow `ai-agent-workflow-guide.md` for best results.
-3. **Run the AI Self-Audit Checklist** — Before finalizing output, use `templates/ai-agent-self-audit-checklist.md`.
-4. **Map decisions back to standards** — Explicitly reference which standards influenced architectural or implementation choices.
-5. **When working on templates** — Also reference the `scaffolds-and-boilerplates/` standards.
+2. **Use the AI Agent Workflow Guide** — Follow `ai-agent-workflow-guide.md`.
+3. **Run the AI Self-Audit Checklist** — Before finalizing output.
+4. **Map decisions back to standards** — Explicitly reference which standards influenced choices.
+5. **When working on templates or blueprints** — Reference the `scaffolds-and-boilerplates/` and `educational-blueprints/` standards.
 
 ---
 
@@ -48,28 +48,29 @@ If the answer is clearly yes across the board, we are shipping Px Standard work.
 |---------------------------------|------------------------------------------------------------|
 | Strategy                        | Root README + `existing-primitives-first.md`               |
 | UI/UX                           | All documents in `ui-ux-design/`                           |
-| Patterns                        | Various `recommended-*.md` files in `engineering/`         |
+| Engineering Foundations         | Testing, Versioning, Observability, Security Review        |
+| Educational Blueprints          | `educational-blueprints/educational-blueprint-quality-standards.md` |
+| Scaffolds & Templates           | `scaffolds-and-boilerplates/` section                      |
 | Quality                         | `repo-readiness-scorecard.md` + `px-work-checklist.md`     |
-| Documentation                   | `every-folder-readme-rule.md` + templates                  |
-| Templates & Scaffolds           | `scaffolds-and-boilerplates/` section                      |
+| Documentation                   | `documentation-standards.md` + `every-folder-readme-rule.md` |
 | AI Workflow                     | `ai-agent-workflow-guide.md`                               |
 
 ---
 
 ## Common Anti-Patterns When Using Standards
 
-- Treating standards as optional or "nice to have"
+- Treating standards as optional
 - Only checking standards at the end of a task
 - Not running the scorecard before PRs
-- Writing poor documentation because "we'll fix it later"
-- Ignoring UI/UX standards in favor of quick custom solutions
+- Writing poor documentation
+- Ignoring UI/UX standards
 - Not referencing standards in PR descriptions
 
 ---
 
 ## Continuous Improvement
 
-The standards codex improves through real usage and feedback. If you find gaps, unclear guidance, or new patterns while working, propose improvements via the standards-proposal issue template.
+The standards codex improves through real usage and feedback. Propose improvements via the standards-proposal issue template.
 
 ---
 

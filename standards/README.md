@@ -49,19 +49,23 @@ The standards are organized into clear pillars. Start with the documents most re
 - `marketing-press-graphics/press-kit-and-media-standards.md` — Press kits, media assets, and external communications
 - `marketing-press-graphics/ai-and-generated-content-guidelines.md` — Responsible use of AI for graphics, copy, and content
 
-### 7. AI-Assisted Development
+### 7. Scaffolds & Boilerplates (New Section)
+- `scaffolds-and-boilerplates/standards-for-templates-and-scaffolds.md` — Quality bar and expectations for the templates repository
+- `scaffolds-and-boilerplates/template-contribution-standards.md` — What makes a high-quality template contribution
+
+### 8. AI-Assisted Development
 - `ai-agent-workflow-guide.md` — How to effectively use the codex with AI agents
 - `templates/ai-agent-self-audit-checklist.md` — Self-audit checklist for AI-generated work
 
-### 8. Education & Onboarding
+### 9. Education & Onboarding
 - `education-onboarding/README.md` — Education pillar overview
 - `education-onboarding/wax-for-px-devs.md` — Focused WAX concepts for Px developers
 
-### 9. Ecosystem & Integration
+### 10. Ecosystem & Integration
 - `ecosystem-integration.md` — How Standards connect to Design System, Templates, and Blueprint Catalog
 - `glossary.md` — Key terms used across the codex
 
-### 10. Templates & Practical Tools
+### 11. Templates & Practical Tools
 - `templates/new-readme-template.md` — Ready-to-use README template
 - `templates/new-package-scaffold-checklist.md` — Checklist for starting new packages
 - `.github/PULL_REQUEST_TEMPLATE.md` — PR template that references the standards
@@ -96,6 +100,10 @@ The standards are organized into clear pillars. Start with the documents most re
 - `marketing-press-graphics/visual-asset-and-graphics-standards.md`
 - `marketing-press-graphics/brand-voice-and-messaging-standards.md`
 - `marketing-press-graphics/press-kit-and-media-standards.md`
+
+**Working with Templates / Scaffolds?** Prioritize:
+- `scaffolds-and-boilerplates/standards-for-templates-and-scaffolds.md`
+- `scaffolds-and-boilerplates/template-contribution-standards.md`
 
 **Before any PR or Release**:
 - Run `repo-readiness-scorecard.md`

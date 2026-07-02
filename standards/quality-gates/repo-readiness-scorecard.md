@@ -98,10 +98,10 @@ See [Versioning and Release Standards](../engineering/versioning-and-release-sta
 | Sensitive operations stay client-side |   | |
 | Proper encryption / vault patterns where relevant |   | |
 | No private key or seed exposure |   | |
-| Auto-sign is opt-in and clearly communicated |   | |
+| Security review process followed for sensitive changes |   | |
 | **Subtotal** | **/10** | |
 
-See [Secure Vault Patterns](../engineering/recommended-secure-vault-patterns.md).
+See [Secure Vault Patterns](../engineering/recommended-secure-vault-patterns.md) and [Security Review & Hardening Standards](../engineering/security-review-and-hardening-standards.md).
 
 ## 8. Educational Value & Polish (Max 5)
 

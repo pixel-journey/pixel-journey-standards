@@ -43,7 +43,7 @@ Future custom contracts will meet a high bar.
 - **UI/UX Design**: Very comprehensive pillar (9 documents)
 - **Marketing, Press & Graphics**: Solid pillar (5 documents)
 - **Scaffolds & Boilerplates**: Dedicated alignment section with templates repo (4 documents)
-- **Educational Blueprints**: Quality standards for the blueprint catalog (1 document + integration)
+- **Educational Blueprints**: Quality standards for the blueprint catalog
 - **Engineering Foundations**: Testing, Versioning, Documentation, Observability, Security Review
 - **Quality Tools**: Scorecard, daily checklist, PR template, AI self-audit checklist
 - **Rules**: Monorepo, documentation, and UI/UX standards

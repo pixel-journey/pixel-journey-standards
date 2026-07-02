@@ -25,7 +25,7 @@ Understanding these connections helps us maintain consistency and maximize the v
 | **pixel-journey-standards**       | Defines excellence, rules, patterns, and quality  | The "constitution" and operating system                |
 | **pixel-journey-design-system**   | Visual language, components, tokens, retro aesthetic | The source of truth for all UI/UX implementation        |
 | **pixel-journey-templates**       | Scaffolds and boilerplates for new work           | The practical implementation layer of the standards      |
-| **wax-ecosystem-blueprint-catalog** | Curated WAX/Antelope patterns and best practices | The broader ecosystem knowledge base that standards reference and extend |
+| **wax-ecosystem-blueprint-catalog** | High-quality educational examples and patterns | Educational demonstrations of the standards              |
 
 ---
 
@@ -42,68 +42,55 @@ Understanding these connections helps us maintain consistency and maximize the v
 - The actual implementation (components, tokens, motion, haptics).
 - Visual examples that standards can reference.
 
-**Recommended flow**: Standards define the *rule*. Design System provides the *tool*. New UI work starts in the Design System when possible.
+**Recommended flow**: Standards define the *rule*. Design System provides the *tool*.
 
 ### 2. pixel-journey-templates
 
 **Standards influence**:
-- All templates and scaffolds must follow the **Standards for Templates and Scaffolds** (`scaffolds-and-boilerplates/standards-for-templates-and-scaffolds.md`).
-- Template contributions should follow the **Template Contribution Standards** (`scaffolds-and-boilerplates/template-contribution-standards.md`).
-- Templates should demonstrate best practices from the codex (UI/UX, state management, error handling, Existing Public Primitives First, etc.).
-- Templates should be educational and make it easy to build standards-compliant applications.
+- All templates and scaffolds must follow the **Standards for Templates and Scaffolds** and **Template Contribution Standards** (`scaffolds-and-boilerplates/`).
+- Templates should demonstrate best practices from the codex.
+- Templates should be educational and easy to extend while staying standards-compliant.
 
 **Templates provide**:
-- Concrete, production-ready boilerplates that implement the standards.
-- Fast starting points that reduce friction for new projects.
-- Real-world feedback that can improve the standards over time.
-
-**Recommended flow**: Start new work from Templates → apply Standards immediately. New template ideas should be guided by the scaffolds standards.
+- Concrete, production-ready boilerplates.
+- Fast starting points that reduce friction.
+- Real-world feedback that improves the standards.
 
 ### 3. wax-ecosystem-blueprint-catalog
 
-**Standards reference**:
-- WAX best practices and patterns documented in the catalog.
-- Hyperion, AtomicAssets, Alcor, and WharfKit usage patterns.
-- On-chain primitives that Px work builds upon.
+**Standards influence**:
+- All educational blueprints should follow the **Educational Blueprint Quality Standards** (`educational-blueprints/educational-blueprint-quality-standards.md`).
+- Blueprints should demonstrate high-quality patterns from across the codex (especially UI/UX, Documentation, Testing, and Security standards).
+- Blueprints should be clear, educational, and honest about trade-offs.
 
-**Standards extend**:
-- The catalog with Px-specific patterns (verifiable entropy, PxWallet vault patterns, monorepo wiring, UI/UX standards, etc.).
-- Educational framing tailored to Px development style.
+**Blueprint Catalog provides**:
+- High-quality, real-world educational examples.
+- Practical demonstrations of standards in action.
+- Feedback loop that helps improve both blueprints and standards.
 
-**Recommended flow**: Use the Blueprint Catalog as the broader knowledge base. Standards provide the Px-specific lens and rules on top of it.
+**Recommended flow**: Blueprints should be developed and reviewed against the Educational Blueprint Quality Standards. They serve as living examples that help developers understand how to apply the standards in practice.
 
 ---
 
 ## Recommended Workflows
 
-### Starting a New PxPackage or Feature
+### Starting a New Project
 
-1. Start from `pixel-journey-templates` (best scaffold).
-2. Immediately apply relevant sections from `pixel-journey-standards` (especially UI/UX standards and monorepo rules).
-3. Use components and tokens from `pixel-journey-design-system`.
-4. Reference patterns from `wax-ecosystem-blueprint-catalog` where relevant.
-5. Self-audit with the Repo Readiness Scorecard before first significant PR.
+1. Start from `pixel-journey-templates` for a solid scaffold.
+2. Reference relevant standards (especially UI/UX and patterns).
+3. Look at examples in `wax-ecosystem-blueprint-catalog` for inspiration on how to apply standards in realistic scenarios.
 
-### Contributing to Any Px Repo
+### Creating or Reviewing a Blueprint
 
-- Check the Standards Codex first for relevant rules or patterns.
-- Follow the documentation and UI/UX rules.
-- Use the PR template that references the scorecard.
-- When in doubt, prefer composition of existing primitives (from Design System + Blueprint Catalog) over custom solutions.
-
-### Contributing to Templates
-
-- Follow the **Standards for Templates and Scaffolds** and **Template Contribution Standards** in the `scaffolds-and-boilerplates/` section.
-- Ensure the template demonstrates high-quality, standards-aligned patterns.
-- Include excellent documentation and educational value.
+- Follow the **Educational Blueprint Quality Standards**.
+- Ensure strong alignment with UI/UX, Documentation, and core engineering standards.
+- Focus on clarity and educational value.
 
 ---
 
 ## Governance & Evolution
 
-Changes to the Standards Codex that affect the templates repo should be coordinated. New patterns discovered while building templates should be proposed back into the standards repo.
-
-Major updates to the Design System or new high-quality templates should be reviewed for alignment with current standards.
+Changes to core standards should be reflected in both templates and educational blueprints over time. Feedback from blueprint usage should flow back into standards improvements.
 
 ---
 

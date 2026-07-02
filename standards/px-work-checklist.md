@@ -88,7 +88,7 @@
 | Versioning & Releases                     | `versioning-and-release-standards.md`                    |
 | Observability                             | `observability-standards.md`                             |
 | Security Review                           | `security-review-and-hardening-standards.md`             |
-| Templates & Scaffolds                     | `scaffolds-and-boilerplates/` section                    |
+| Templates & Scaffolds                     | `scaffolds-and-boilerplate/` section                     |
 | Educational Blueprints                    | `educational-blueprints/educational-blueprint-quality-standards.md` |
 | Overall quality bar                       | `repo-readiness-scorecard.md`                            |
 | How to use everything together            | `using-the-standards.md`                                 |

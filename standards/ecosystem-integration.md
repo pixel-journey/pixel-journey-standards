@@ -47,8 +47,8 @@ Understanding these connections helps us maintain consistency and maximize the v
 ### 2. pixel-journey-templates
 
 **Standards influence**:
-- All templates and scaffolds must follow the **Standards for Templates and Scaffolds** (see `scaffolds-and-boilerplates/standards-for-templates-and-scaffolds.md`).
-- Template contributions should follow the **Template Contribution Standards**.
+- All templates and scaffolds must follow the **Standards for Templates and Scaffolds** (`scaffolds-and-boilerplates/standards-for-templates-and-scaffolds.md`).
+- Template contributions should follow the **Template Contribution Standards** (`scaffolds-and-boilerplates/template-contribution-standards.md`).
 - Templates should demonstrate best practices from the codex (UI/UX, state management, error handling, Existing Public Primitives First, etc.).
 - Templates should be educational and make it easy to build standards-compliant applications.
 
@@ -93,7 +93,7 @@ Understanding these connections helps us maintain consistency and maximize the v
 
 ### Contributing to Templates
 
-- Follow the **Standards for Templates and Scaffolds** and **Template Contribution Standards**.
+- Follow the **Standards for Templates and Scaffolds** and **Template Contribution Standards** in the `scaffolds-and-boilerplates/` section.
 - Ensure the template demonstrates high-quality, standards-aligned patterns.
 - Include excellent documentation and educational value.
 
